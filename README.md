@@ -1,2 +1,5 @@
-# bootstrap-python-kata
-Bootstrap repository for clean code katas in Python
+# Bootstrap for Python katas
+
+## Overview
+
+This is a bootstrap repository for clean code katas in Python 3.

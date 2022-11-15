@@ -1,6 +1,6 @@
 run = ["pytest", "test_something.py"]
-entrypoint = "test_something.py"
 language = "python3"
+entrypoint = "test_something.py"
 hidden = ["LICENSE", "venv", ".config", ".gitignore", "**/__pycache__", "**/.pytest_cache", "**/*.pyc"]
 
 [nix]
@@ -29,5 +29,5 @@ POETRY_CACHE_DIR = "${HOME}/${REPL_SLUG}/.cache/pypoetry"
 language = "python3"
 ignoredPackages = ["unit_tests"]
 
-[unitTest]
-language = "python3"
+[packager.features]
+enabledForHosting = false

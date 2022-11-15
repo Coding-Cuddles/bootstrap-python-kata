@@ -1,11 +1,16 @@
 { pkgs }: {
   deps = [
     pkgs.python38Full
-    pkgs.python38Packages.pytest_6_1
   ];
   env = {
+    PYTHON_LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+      # Needed for pandas / numpy
+      pkgs.stdenv.cc.cc.lib
+      pkgs.zlib
+      # Needed for matplotlib
+      pkgs.xorg.libX11
+    ];
     PYTHONBIN = "${pkgs.python38Full}/bin/python3.8";
-    PYTHONPATH = "${pkgs.python38Packages.pytest_6_1}/lib/python3.8/site-packages";
     LANG = "en_US.UTF-8";
   };
 }

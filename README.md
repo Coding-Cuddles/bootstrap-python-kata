@@ -1,6 +1,6 @@
 # Bootstrap for Python katas
 
-[![Run on Replit](https://replit.com/badge/github/megabyde/bootstrap-python-kata)](https://replit.com/new/github/megabyde/bootstrap-python-kata)
+[![Run on Replit](https://replit.com/badge/github/Coding-Cuddles/bootstrap-python-kata)](https://replit.com/new/github/Coding-Cuddles/bootstrap-python-kata)
 
 ## Overview
 

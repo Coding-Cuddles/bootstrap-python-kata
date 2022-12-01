@@ -1,6 +1,6 @@
-run = ["pytest", "test_something.py"]
+run = ["make", "test"]
 language = "python3"
-entrypoint = "test_something.py"
+entrypoint = "main.py"
 hidden = ["LICENSE", "venv", ".config", ".gitignore", "**/__pycache__", "**/.pytest_cache", "**/*.pyc"]
 
 [nix]

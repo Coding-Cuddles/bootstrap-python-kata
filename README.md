@@ -4,20 +4,26 @@
 
 ## Overview
 
-This is a bootstrap repository for clean code katas in Python 3.
+This is a bootstrap repository for clean code katas in Python 3 using pytest.
 
 ## Usage
 
-You can import this project into [Replit](https://replit.com)
-and it will handle all dependencies automatically.
+You can import this project into [Replit](https://replit.com), and it will
+handle all dependencies automatically.
 
 ### Prerequisites
 
 * [Python 3.8+](https://www.python.org/)
 * [pytest](https://pytest.org)
 
+### Run main
+
+```console
+make run
+```
+
 ### Run tests
 
 ```console
-pytest test_something.py
+make test
 ```

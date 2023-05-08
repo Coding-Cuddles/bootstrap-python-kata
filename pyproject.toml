@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "bootstrap-python-kata"
 version = "1.0.0"
-description = "Bootstrap repository for clean code katas in Python"
-authors = ["Yury Bayda <yury@bayda.pro>"]
+description = "Bootstrap for Python katas"
+authors = ["Codding Cuddles"]
 
 [tool.poetry.dependencies]
 python = ">=3.8.0"

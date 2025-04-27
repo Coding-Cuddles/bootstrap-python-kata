@@ -1,22 +1,31 @@
 all: test
 
+# Detect available package managers
+UV := $(shell command -v uv 2> /dev/null)
+
 SRCS := $(shell git ls-files *.py)
+
+ifdef UV
+	RUNNER := uv run
+else
+	RUNNER :=
+endif
 
 .PHONY: run
 run:
-	./main.py
+	$(RUNNER) ./main.py
 
 .PHONY: test
 test:
-	pytest test_*.py
+	$(RUNNER) pytest test_*.py
 
 .PHONY: format
 format:
-	yapf -i $(SRCS)
+	$(RUNNER) ruff format $(SRCS)
 
 .PHONY: format-check
 format-check:
-	yapf --diff $(SRCS) \
+	$(RUNNER) ruff format --check $(SRCS) \
 		|| (echo "Some files require formatting. Run 'make format' to fix." && exit 1)
 
 .PHONY: clean

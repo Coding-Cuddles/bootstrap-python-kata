@@ -17,12 +17,6 @@ handle all dependencies automatically.
 * [Python 3.8+](https://www.python.org/)
 * [pytest](https://pytest.org)
 
-### Run main
-
-```console
-make run
-```
-
 ### Run tests
 
 ```console

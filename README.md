@@ -13,12 +13,6 @@ This is a bootstrap repository for clean code katas in Python 3 using pytest.
 
 ## Usage
 
-### Run main
-
-```console
-make run
-```
-
 ### Run tests
 
 ```console

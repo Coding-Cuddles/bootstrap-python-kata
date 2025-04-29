@@ -1,8 +1,6 @@
 all: test
 
-# Detect available package managers
 UV := $(shell command -v uv 2> /dev/null)
-
 SRCS := $(shell git ls-files *.py)
 
 ifdef UV
@@ -10,10 +8,6 @@ ifdef UV
 else
 	RUNNER :=
 endif
-
-.PHONY: run
-run:
-	$(RUNNER) ./main.py
 
 .PHONY: test
 test:

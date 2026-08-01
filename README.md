@@ -78,6 +78,7 @@ Make is optional. Run `make` or `make help` to list these commands in the termin
 | Command             | Result                                  |
 | ------------------- | --------------------------------------- |
 | `make all`          | Run the test suite                      |
+| `make help`         | Show the command reference              |
 | `make test`         | Run the test suite                      |
 | `make format`       | Format tracked Python files             |
 | `make format-check` | Check formatting without changing files |
